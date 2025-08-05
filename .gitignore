@@ -83,3 +83,9 @@ coverage.xml
 # Output from Gemini / API cache (optional)
 output/
 
+# Ignore uploaded files and generated results
+templates/uploads/*.pdf
+templates/uploads/*.docx
+templates/results/*.pdf
+templates/results/*.txt
+
