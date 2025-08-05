@@ -1,0 +1,35 @@
+Which dataset was NOT used in the AI-powered drug discovery research described in the paper?
+A. ChEMBL
+B. PubChem
+C. DrugBank
+D. ZINC
+**Answer:** B
+
+What type of neural network architecture was employed for molecular representation in this study?
+A. Convolutional Neural Networks (CNNs)
+B. Recurrent Neural Networks (RNNs)
+C. Graph Neural Networks (GNNs)
+D. Autoencoders
+**Answer:** C
+
+The research primarily focuses on applying AI to which area of drug discovery?
+A. Developing novel cancer therapies
+B. Improving existing drug delivery systems
+C. Drug discovery for neglected diseases
+D. Predicting drug side effects
+**Answer:** C
+
+Which of the following is NOT listed as an evaluation metric in the study?
+A. QED
+B. AUC (Area Under the Curve)
+C. SA Score
+D. RMSE
+**Answer:** B
+
+Besides Graph Neural Networks, what other architecture was used in the modeling process?
+A. Support Vector Machines (SVMs)
+B. Naive Bayes classifiers
+C. Transformer-based architectures
+D. Decision Trees
+**Answer:** C
+

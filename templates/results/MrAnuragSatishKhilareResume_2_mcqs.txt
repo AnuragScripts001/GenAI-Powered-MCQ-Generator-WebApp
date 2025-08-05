@@ -1,0 +1,35 @@
+What is Anurag Khilare's highest level of education?
+A. Higher Secondary Certificate
+B. Secondary School Certificate
+   B. B.Tech in Computer Science and Engineering
+   D. Master's in Data Science
+   **Answer:** C
+
+2. Which deep learning frameworks is Anurag proficient in?
+   A. Keras and PyTorch
+   B. TensorFlow and Scikit-learn
+C. TensorFlow and PyTorch
+D. Keras and Scikit-learn
+**Answer:** C
+
+In his E-commerce Product Recommendation System project, which techniques did Anurag implement?
+A. Only collaborative filtering
+B. Content-based filtering and collaborative filtering
+C. Only content-based filtering
+D. Rule-based and collaborative filtering
+**Answer:** B
+
+Which programming language did Anurag NOT explicitly mention using in his projects?
+A. Python
+B. Java
+C. JavaScript
+D. SQL
+**Answer:** B
+
+What database systems does Anurag have experience working with?
+A. PostgreSQL and Oracle
+B. MongoDB and MySQL
+C. SQLite and PostgreSQL
+D. MySQL and Oracle
+**Answer:** B
+

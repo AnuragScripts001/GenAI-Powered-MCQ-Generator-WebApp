@@ -1,0 +1,35 @@
+What percentage of an organization's data is typically considered unstructured, according to the provided text?
+A. 10%
+B. 80%
+C. 50%
+D. 20%
+Answer: B
+
+Which of the following is NOT an example of structured data as defined in the text?
+A. Data stored in a relational database.
+B. Data organized in rows and columns.
+C. An email message.
+D. Data easily used by a computer program.
+Answer: C
+
+The ACID properties of database transactions ensure data integrity. Which property guarantees that a transaction either completes entirely or not at all?
+A. Consistency
+B. Isolation
+C. Durability
+D. Atomicity
+Answer: D
+
+Which of the following is a technique used to deal with unstructured data, as mentioned in the text?
+A. Data Encryption
+B. Data Mining
+C. Data Definition Language (DDL)
+D. Relational Database Management System (RDBMS)
+Answer: B
+
+According to the text, what is a primary characteristic of semi-structured data?
+A. It conforms to a predefined data model.
+B. It lacks any discernible structure.
+C. It uses tags to segregate semantic elements.
+D. It is easily processed by standard computer programs.
+Answer: C
+

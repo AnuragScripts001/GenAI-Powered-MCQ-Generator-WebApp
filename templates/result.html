@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MCQ Generation Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #f1f8e9), url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-blend-mode: overlay;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 850px;
+            width: 90%;
+            padding: 2em 3em;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 1.5em;
+            font-size: 2em;
+        }
+
+        .mcq {
+            margin-bottom: 2.5em;
+            padding: 1em 1.5em;
+            border-left: 5px solid #00acc1;
+            background: #fefefe;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .mcq:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-weight: 600;
+            color: #37474f;
+            margin-bottom: 0.5em;
+        }
+
+        .options {
+            list-style-type: none;
+            padding-left: 1em;
+            margin: 0;
+        }
+
+        .options li {
+            margin: 0.3em 0;
+            padding: 0.4em;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .options li:hover {
+            background-color: #e0f2f1;
+        }
+
+        .answer {
+            margin-top: 0.8em;
+            font-weight: 600;
+            color: #388e3c;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 1em 0.5em 0 0;
+            text-decoration: none;
+            color: #fff;
+            background: #00acc1;
+            padding: 0.7em 1.5em;
+            border-radius: 30px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #00838f;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        a.back-link {
+            display: block;
+            margin-top: 2em;
+            text-align: center;
+            color: #fff;
+            background: #00acc1;
+            padding: 0.7em 1.5em;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        a.back-link:hover {
+            background: #00838f;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5em;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .btn {
+                display: block;
+                margin: 0.5em auto;
+                width: 80%;
+            }
+
+            a.back-link {
+                width: 80%;
+                margin: 1.5em auto 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Generated MCQs</h1>
+
+        {% if mcqs %}
+            {% for mcq in mcqs %}
+                <div class="mcq">
+                    <div class="question">Q{{ loop.index }}. {{ mcq.question }}</div>
+                    <ul class="options">
+                        {% for option in mcq.options %}
+                            <li>{{ option }}</li>
+                        {% endfor %}
+                    </ul>
+                    <div class="answer">✅ Answer: {{ mcq.answer }}</div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No MCQs were generated.</p>
+        {% endif %}
+
+        <div class="btn-container">
+            <a href="/download/{{txt_filename}}" class="btn">⬇️ Download as TXT</a>
+            <a href="/download/{{pdf_filename}}" class="btn">⬇️ Download as PDF</a>
+        </div>
+
+        <a href="{{ url_for('index') }}" class="back-link">← Generate More MCQs</a>
+    </div>
+</body>
+</html>

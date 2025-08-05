@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MCQ Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 60px auto;
+            padding: 35px 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 18px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(6px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f2937;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .form-control,
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-control:focus,
+        input[type="number"]:focus,
+        input[type="file"]:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        @media screen and (max-width: 640px) {
+            .container {
+                margin: 30px 15px;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate MCQs from Your Document</h1>
+        <form action="/generate" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Upload Document (PDF, DOCX, TXT)</label>
+                <input type="file" class="form-control" id="file" name="file" accept=".pdf,.docx,.txt" required>
+            </div>
+            <div class="form-group">
+                <label for="num_questions">Number of Questions</label>
+                <input type="number" class="form-control" id="num_questions" name="num_questions" min="1" max="100" value="5" required>
+            </div>
+            <button type="submit" class="btn">Generate MCQs</button>
+        </form>
+    </div>
+</body>
+</html>

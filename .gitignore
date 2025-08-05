@@ -1,0 +1,85 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask cache and other local files
+instance/
+.webassets-cache
+*.db
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Log files
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytype
+.pytype/
+
+# Pycharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Output from Gemini / API cache (optional)
+output/
+
